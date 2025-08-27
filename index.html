@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💭 Inspiration Generator</h1>
+            <p>Discover wisdom from great minds across time</p>
+        </div>
+
+        <div class="category-selector">
+            <select id="categorySelect">
+                <option value="all">All Quotes</option>
+                <option value="wisdom">Wisdom</option>
+                <option value="motivation">Motivation</option>
+                <option value="success">Success</option>
+                <option value="life">Life Lessons</option>
+            </select>
+        </div>
+
+        <div class="quote-card">
+            <div class="animation-container" id="loader">
+                <div class="spinner"></div>
+            </div>
+            
+            <div class="quote-container">
+                <div class="quote-text" id="quoteText">
+                    <i class="fas fa-quote-left"></i>
+                    <span id="quote">Click the button to generate an inspiring quote!</span>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="quote-author" id="author">
+                    - Ready to be inspired
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="newQuoteBtn">
+                    <i class="fas fa-sync-alt"></i> New Quote
+                </button>
+                <button class="btn btn-secondary" id="tweetBtn">
+                    <i class="fab fa-twitter"></i> Tweet
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ | Refresh for more inspiration</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
